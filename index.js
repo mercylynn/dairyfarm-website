@@ -1,3 +1,4 @@
+
 function totalProduction(){
     var a=parseInt(document.getElementById("txta").value);
     var b=parseInt(document.getElementById("txtb").value);
@@ -6,10 +7,23 @@ function totalProduction(){
     var e=a+b+c+d;
     document.getElementById("txte").value=""+e;
 }
-function incomeOverTime(selling_price, time){
+
+var sellingPrice = document.getElementById("price");
+var time= document.getElementById("time");
+        
+function incomeOverTime(sellingPrice, time){
+/*
     var f=parseInt(document.getElementById("txtf").value);
     var g=f*e*7;
     var h=f*e*7*12;
-    document.getElementById("textg").value=""+g;
-    document.getElementById("texth").value=""+h;
+    if(f>7){
+        document.getElementById("textg").value=""+g;  
+    }
+    else{
+        document.getElementById("texth").value=""+h;
+    }*/
+    
+   
 }
+
+
