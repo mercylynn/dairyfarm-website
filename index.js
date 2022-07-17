@@ -31,7 +31,15 @@ document.getElementById('incomeForm').addEventListener("submit", e => {
 
     incomeOverTime(sellingPrice, time);
 });
+function report(){
+    const data=[];
+    
+    data[0] = parseInt(document.getElementById("sheda").value);
+    data[1]  = parseInt(document.getElementById("sheda").value);
+    data[2] = parseInt(document.getElementById("shedc").value);
+    data[3] = parseInt(document.getElementById("shedd").value);
 
+}
 
 
 
