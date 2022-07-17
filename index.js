@@ -35,9 +35,24 @@ function report(){
     const data=[];
     
     data[0] = parseInt(document.getElementById("sheda").value);
-    data[1]  = parseInt(document.getElementById("sheda").value);
+    data[1] = parseInt(document.getElementById("sheda").value);
     data[2] = parseInt(document.getElementById("shedc").value);
     data[3] = parseInt(document.getElementById("shedd").value);
+
+    dailyIncome=totalLitres*40;
+
+    incomeJanuary = dailyIncome * 31;
+    incomeFebruary = dailyIncome * 29;
+    incomeMarch = dailyIncome * 31;
+    incomeApril = dailyIncome * 30;
+    incomeMay = dailyIncome * 31;
+    incomeJune = dailyIncome * 30;
+    incomeJuly = dailyIncome * 31;
+    incomeAugust = dailyIncome * 31;
+    incomeSeptember = dailyIncome * 30;
+    incomeOctober = dailyIncome * 31;
+    incomeNovember = dailyIncome * 30;
+    incomeDecember = dailyIncome * 31;
 
 }
 
