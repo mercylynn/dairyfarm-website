@@ -7,7 +7,7 @@
 - [Setup/Installation Requirements](#setupinstallation-requirements)
 - [License](#license)
 # Dairy MIlk Production
-This an ecommerce website designed to market farmers agriculural products where clients can order directlty from the farmers. 
+This a milk production website to monitor farmers cow milk production rate and income.
 # Author
  created By Mercy Kamene on 17-07-2022
 # Description
@@ -27,7 +27,7 @@ The following languages have been used on this project:
 - CSS which was used for styling the pages
 - Javascript which was used for page interactivity
 # Setup/Installation Requirements
-- Live link to view the project 
+- Live link to view the project [https://mercylynn.github.io/dairyfarm-website/]
 # License
 MIT License
 Copyright (c) 2022 Moringa school
