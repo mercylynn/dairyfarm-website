@@ -34,7 +34,82 @@ document.getElementById('incomeForm').addEventListener("submit", e => {
     incomeOverTime(sellingPrice, time);
 });
 
+function milkReport(){
+
+    event.preventDefault();
+
+    let data = [];
+
+     data[0] = data["shedA"] = parseInt(document.getElementById("sheda").value);
+     data[1] = data["shedB"] = parseInt(document.getElementById("shedb").value);
+     data[2] = data["shedC"] = parseInt(document.getElementById("shedb").value);
+     data[3] = data["shedD"] = parseInt(document.getElementById("shedd").value);
+
+    let total = data.shedA + data.shedB + data.shedC + data.shedD;
+
+    document.getElementById("outputData").innerHTML += "<Br>"
+
+    
+
+    dailyIncome = sumData * 45;
+
+    document.getElementById("outputData").innerHTML += "<Br>"
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+
+    document.getElementById("outputData").innerHTML += "<p>Your total daily income is Ksh. " + dailyIncome + " </p>";
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+
+    weeklyIncome = dailyIncome * 7;
+
+    document.getElementById("outputData").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+
+    document.getElementById("outputData").innerHTML += "<Br>"
 
 
+
+    incomeJanuary = dailyIncome * 31;
+    incomeFebruary = dailyIncome * 29;
+    incomeMarch = dailyIncome * 31;
+    incomeApril = dailyIncome * 30;
+    incomeMay = dailyIncome * 31;
+    incomeJune = dailyIncome * 30;
+    incomeJuly = dailyIncome * 31;
+    incomeAugust = dailyIncome * 31;
+    incomeSeptember = dailyIncome * 30;
+    incomeOctober = dailyIncome * 31;
+    incomeNovember = dailyIncome * 30;
+    incomeDecember = dailyIncome * 31;
+
+     
+    document.getElementById("outputData").innerHTML += "<p> Your total income for January is Ksh. " + incomeJanuary + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for February is Ksh. " + incomeFebruary + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for March is Ksh. " + incomeMarch + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for April is Ksh. " + incomeApril + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for May is Ksh. " + incomeMay + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for June is Ksh. " + incomeJune + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for July is Ksh. " + incomeJuly + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for August is Ksh. " + incomeAugust + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for September is Ksh. " + incomeSeptember + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for October is Ksh. " + incomeOctober + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for November is Ksh. " + incomeNovember + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for December is Ksh. " + incomeDecember + " </p>"
+
+
+    document.getElementById("outputData").innerHTML += "<Br>"
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+
+    incomeInLeapYear = dailyIncome * 366;
+
+    document.getElementById("outputData").innerHTML += "<p>Your total income in a leap year is Ksh. " + incomeInLeapYear + " </p>";
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+
+    document.getElementById("outputData").innerHTML += "<Br>"
+}
 
 
