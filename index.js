@@ -39,7 +39,14 @@ function report(){
     data[2] = parseInt(document.getElementById("shedc").value);
     data[3] = parseInt(document.getElementById("shedd").value);
 
-    dailyIncome=totalLitres*40;
+    let sum = 0;
+
+for (let i = 0; i < data.length; i++) {
+    sum += array[i];
+
+    
+
+    dailyIncome=sum*40;
 
     incomeJanuary = dailyIncome * 31;
     incomeFebruary = dailyIncome * 29;
@@ -53,6 +60,25 @@ function report(){
     incomeOctober = dailyIncome * 31;
     incomeNovember = dailyIncome * 30;
     incomeDecember = dailyIncome * 31;
+
+    document.getElementById("outputData").innerHTML += "<p> Your total income for January is Ksh. " + incomeJanuary + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for February is Ksh. " + incomeFebruary + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for March is Ksh. " + incomeMarch + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for April is Ksh. " + incomeApril + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for May is Ksh. " + incomeMay + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for June is Ksh. " + incomeJune + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for July is Ksh. " + incomeJuly + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for August is Ksh. " + incomeAugust + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for September is Ksh. " + incomeSeptember + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for October is Ksh. " + incomeOctober + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for November is Ksh. " + incomeNovember + " </p>"
+    document.getElementById("outputData").innerHTML += "<p> Your total income for December is Ksh. " + incomeDecember + " </p>"
+
+
+    document.getElementById("outputData").innerHTML += "<Br>"
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+report();
 
 }
 
