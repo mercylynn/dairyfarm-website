@@ -2,7 +2,7 @@
 
 <HTML>
     <HEAD>
-        <script type="text/javascript" src="index.js"></script>
+       
        <link rel="stylesheet" href="index.css">
     </HEAD>
     <BODY>
@@ -15,7 +15,7 @@
                     <label>Enter Milk production for shed A:</label>
                 </td>
                 <td>
-                    <input type="text" name="txta" id="txta" />
+                    <input type="text" name="sheda" id="sheda" />
                 </td>
             </tr>
             <tr>
@@ -23,7 +23,7 @@
                     <label>Enter Milk production for shed B:</label>
                 </td>
                 <td>
-                    <input type="text" name="txtb" id="txtb" />
+                    <input type="text" name="shedb" id="shedb" />
                 </td>
             </tr>
             <tr>
@@ -31,7 +31,7 @@
                     <label>Enter Milk production for shed C:</label>
                 </td>
                 <td>
-                    <input type="text" name="txtc" id="txtc" />
+                    <input type="text" name="shedc" id="shedc" />
                 </td>
             </tr>
             <tr>
@@ -39,7 +39,7 @@
                     <label>Enter Milk production for shed D:</label>
                 </td>
                 <td>
-                    <input type="text" name="txtd" id="txtd" />
+                    <input type="text" name="shedd" id="shedd" />
                 </td>
             </tr>
             <tr>
@@ -55,7 +55,7 @@
                     <label>Total Production per day</label>
                 </td>
                 <td>
-                    <input type="text" name="txte" id="txte" readonly />
+                    <input type="text" name="totallitres" id="totallitres" readonly />
                 </td>
             </tr>
         </table>
@@ -65,36 +65,46 @@
        
 
         </div>
-        
-        </form>
         <div class="income">
-            <form method="POST">
-                Enter brooksides buying price
+            <form method="POST" id="incomeForm">
+                Enter brooksides buying price: Ksh
+                <input type="int" id="buyingPrice" size="3" name="buyingPrice"><br />
                 <br>
-                Ksh<input type="int" id="price" size="3"><br />
-                <br>
-               Enter number of days
-                <br>
-                <input type="int" id="time" size="3">in a week <br />
+               Enter number of days: 
+                <input type="int" id="time" size="3" name="time"> in a week <br />
                 <br>
                 
-                Total Litres of milk per day
+                Total Litres of milk per day: <input type="int" id="litres" size="3" name="litres"> Litres <br />
                 <br>
-                <input type="int" id="litres" size="3"> Litres <br />
-                
-          
-          <br>
-              <input type="hidden" id="" name=""/>
-              Your Weekly income is: Ksh<span id=""></span> <br />
-              <input type="hidden" id="" name=""/>
-              Your Yearly income is Ksh<span id=""></span>
-          <br>
-         
+                <button type="submit">Get Totals</button>
+                <br>
+            </form>
+        </div>
+        <br>
+
+
+        <div class="total-income">
+            <label>Total income per week: ksh</label>
+            <input type="text" name="weekly" id="perWeek" readonly />
+
+            <br>
+            <br>
+            <label>Total income per month: ksh</label>
+            <input type="text" name="monthly" id="perMonth" readonly />
+
+            <br>
+            <br>
+            <label>Total income per year: ksh</label>
+            <input type="text" name="yearly" id="perYear" readonly />
 
         </div>
 
         
-          </form>
+         
+    <script type="text/javascript" src="index.js"></script>
+       
+        
+         
         
     </BODY>
 </HTML>
