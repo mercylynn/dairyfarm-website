@@ -3,9 +3,10 @@
 <HTML>
     <HEAD>
         <script type="text/javascript" src="index.js"></script>
-       
+       <link rel="stylesheet" href="index.css">
     </HEAD>
     <BODY>
+        
         <h2>MILK PRODUCTION</h2>
         <hr />
         <table>
@@ -61,44 +62,39 @@
         <div>
             <h2>Total income</h2>
             <hr>
-        <table>
-            <tr>
-                <td>
-                    <label>Enter Brooksides buying price:</label>
-                </td>
-                <td>
-                    <input type="text" name="txtf" id="txtf" />
-                </td>
-            </tr>
-            
        
-        
-        <label>Select Period</label> 
-    <select id="">
-    <option type="text" id="textg" >WEEKLY</option>
-    <option type="text" id="textg" >YEARLY</option>
-    
-  </select>
-        
-        <tr>
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                <input type="button" value="Calculate" onclick="incomeOverTime()" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Total Income</label>
-            </td>
-            <td>
-                <input type="text" name="txtg" id="txtg" readonly />
-            </td>
-        </tr>
-    </table>
 
         </div>
+        
+        </form>
+        <div class="income">
+            <form method="POST">
+                Enter brooksides buying price
+                <br>
+                Ksh<input type="int" id="price" size="3"><br />
+                <br>
+               Enter number of days
+                <br>
+                <input type="int" id="time" size="3">in a week <br />
+                <br>
+                
+                Total Litres of milk per day
+                <br>
+                <input type="int" id="litres" size="3"> Litres <br />
+                
+          
+          <br>
+              <input type="hidden" id="" name=""/>
+              Your Weekly income is: Ksh<span id=""></span> <br />
+              <input type="hidden" id="" name=""/>
+              Your Yearly income is Ksh<span id=""></span>
+          <br>
+         
+
+        </div>
+
+        
+          </form>
         
     </BODY>
 </HTML>
