@@ -109,6 +109,48 @@
             <hr>
             <p id="outputData"></p>
         </div>
+
+
+        <div class="dataform">
+                
+            <form action="submit" onsubmit="milkReport();">
+                <h2></h2> 
+                <div id="sheds">
+                    <label for="shedA">Shed A Litres:</label>
+                    <input id="sheda" type="number" min="0" required>
+                </div>
+        
+                <div id="sheds">
+                    <label for="shedB">Shed B Litres:</label>
+                    <input id="shedb" type="number" min="0" required>
+                </div>
+        
+                <div id="sheds">
+                    <label for="shedC">Shed C LItres:</label>
+                    <input id="shedc" type="number" min="0" required>
+                </div>
+        
+                <div id="sheds">
+                    <label for="shedD">Shed D Litres:</label>
+                    <input id="shedd" type="number" min="0" required>
+                </div>
+        
+                <button type="submit">Submit</button>
+               
+                
+            </form>
+        </div>
+
+        <!-- output section -->
+        
+        <div class="outputDisplay">
+            <h2 id="displayTitle">Production Output Report</h2>
+            <hr>
+            <p id="outputData"></p>
+
+            <!-- optional qn section -->
+        </div>
+    </div>    
         
 
         
