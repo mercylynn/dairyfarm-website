@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-.income{
+.income .total-income{
     color: #FAFAFA;
     background-color:gray;
     text-align: center;
@@ -12,11 +12,8 @@ body{
 }
 table {
     width: 30%;
-  
-
-  box-shadow: 10px -10px 5px #CCC;
+  box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
   border-radius:15px;
-  
   align-content: center;
   margin-left: 30%;
   
