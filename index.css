@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.income{
+    color: #FAFAFA;
+    background-color:gray;
+    text-align: center;
+    font-size: 22px;
+    
+}
+table {
+    width: 30%;
+  
+
+  box-shadow: 10px -10px 5px #CCC;
+  border-radius:15px;
+  
+  align-content: center;
+  margin-left: 30%;
+  
+}
