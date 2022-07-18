@@ -1,5 +1,5 @@
-/*function totalProduction(){
-    var =parseInt(document.getElementById("").value);
+function totalProduction(){
+    var shedA=parseInt(document.getElementById("").value);
     var shedB=parseInt(document.getElementById("shedb").value);
     var shedC=parseInt(document.getElementById("shedc").value);
     var ShedD=parseInt(document.getElementById("shedd").value);
@@ -31,7 +31,7 @@ document.getElementById('incomeForm').addEventListener("submit", e => {
     const sellingPrice = litres * buyingPrice;
 
     incomeOverTime(sellingPrice, time);
-});*/
+});
 function milkReport(){
 
     event.preventDefault();
@@ -62,7 +62,6 @@ function milkReport(){
     weeklyIncome = dailyIncome * 7;
 
    
-
 
 
     incomeJanuary = dailyIncome * 31;
