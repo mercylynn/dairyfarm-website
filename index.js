@@ -1,10 +1,9 @@
-
-function totalProduction(){
-    var shedA=parseInt(document.getElementById("sheda").value);
+/*function totalProduction(){
+    var =parseInt(document.getElementById("").value);
     var shedB=parseInt(document.getElementById("shedb").value);
     var shedC=parseInt(document.getElementById("shedc").value);
     var ShedD=parseInt(document.getElementById("shedd").value);
-    var total=shedA+shedB+shedC+ShedD;
+    var total=+shedB+shedC+ShedD;
     document.getElementById("totallitres").value=""+total;
 }
 
@@ -32,26 +31,25 @@ document.getElementById('incomeForm').addEventListener("submit", e => {
     const sellingPrice = litres * buyingPrice;
 
     incomeOverTime(sellingPrice, time);
-});
-
+});*/
 function milkReport(){
 
     event.preventDefault();
 
-    let data = [];
+    var data = [];
 
-     data[0] = data["shedA"] = parseInt(document.getElementById("sheda").value);
-     data[1] = data["shedB"] = parseInt(document.getElementById("shedb").value);
-     data[2] = data["shedC"] = parseInt(document.getElementById("shedb").value);
-     data[3] = data["shedD"] = parseInt(document.getElementById("shedd").value);
+     data[0] = data["shedA"] = parseInt(document.getElementById("shedA").value);
+     data[1] = data["shedB"] = parseInt(document.getElementById("shedB").value);
+     data[2] = data["shedC"] = parseInt(document.getElementById("shedC").value);
+     data[3] = data["shedD"] = parseInt(document.getElementById("shedD").value);
 
-    let total = data.shedA + data.shedB + data.shedC + data.shedD;
+    var total = data.shedA+ data.shedB + data.shedC + data.shedD;
 
     document.getElementById("outputData").innerHTML += "<Br>"
 
     
 
-    dailyIncome = sumData * 45;
+    dailyIncome = total * 40;
 
     document.getElementById("outputData").innerHTML += "<Br>"
 
@@ -63,11 +61,7 @@ function milkReport(){
 
     weeklyIncome = dailyIncome * 7;
 
-    document.getElementById("outputData").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
-
-    document.getElementById("outputData").innerHTML += "<hr>"
-
-    document.getElementById("outputData").innerHTML += "<Br>"
+   
 
 
 
