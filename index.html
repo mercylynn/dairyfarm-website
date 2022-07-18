@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h2>MILK PRODUCTION</h2>
+    <h2 id="heading">MILK PRODUCTION</h2>
         <hr />
         <table>
             <tr>
@@ -60,14 +60,65 @@
                 </td>
             </tr>
         </table>
+        
+        <hr>
+        <div class="form2">
+
+            <div class="dataform">
+                    <h1 d="heading">Get M0nthly Report</h1>
+                    <hr>
+                <form action="submit" onsubmit="milkReport();">
+                    <h2></h2> 
+                    <div id="sheds">
+                        <label for="shedA">Shed A Litres:</label>
+                        <input id="shedA" type="number" min="0" required>
+                    </div>
+            
+                    <div id="shed">
+                        <label for="shedB">Shed B Litres:</label>
+                        <input id="shedB" type="number" min="0" required>
+                    </div>
+            
+                    <div id="sheds">
+                        <label for="shedC">Shed C LItres:</label>
+                        <input id="shedC" type="number" min="0" required>
+                    </div>
+            
+                    <div id="sheds">
+                        <label for="shedD">Shed D Litres:</label>
+                        <input id="shedD" type="number" min="0" required>
+                    </div>
+            
+                    <button type="submit">Submit</button>
+                   
+                    
+                </form>
+            </div>
+            <div class="img1">
+                <img src="./assets/images/Dairy-Cows-In-Field.jpg" alt="">
+            </div>
+    </div>
+    
+    <div>
+        <h2 id="heading">Monthly and Leap Year Report</h2>
+        <hr>
+   
+
+    </div>
+            <div class="outputDisplay">
+                <h2 id="displayTitle">Production Milk Report</h2>
+                
+                <p id="outputData"></p>
+    
+            </div>
+        </div>        
         <div>
-            <h2>Total income</h2>
+            <h2 id="heading">Total income</h2>
             <hr>
        
 
         </div>
-        
-        
+        <div class="selling">
 
         <div class="income">
             <form method="POST" id="incomeForm">
@@ -102,50 +153,12 @@
             <input type="text" name="" id="perYear" readonly />
 
         </div>
-
-        
-        
-        
-
-
-        <div class="dataform">
-                
-            <form action="submit" onsubmit="milkReport();">
-                <h2></h2> 
-                <div id="sheds">
-                    <label for="shedA">Shed A Litres:</label>
-                    <input id="shedA" type="number" min="0" required>
-                </div>
-        
-                <div id="shed">
-                    <label for="shedB">Shed B Litres:</label>
-                    <input id="shedB" type="number" min="0" required>
-                </div>
-        
-                <div id="sheds">
-                    <label for="shedC">Shed C LItres:</label>
-                    <input id="shedC" type="number" min="0" required>
-                </div>
-        
-                <div id="sheds">
-                    <label for="shedD">Shed D Litres:</label>
-                    <input id="shedD" type="number" min="0" required>
-                </div>
-        
-                <button type="submit">Submit</button>
-               
-                
-            </form>
         </div>
 
         
-        <div class="outputDisplay">
-            <h2 id="displayTitle">Production Milk Report</h2>
-            <hr>
-            <p id="outputData"></p>
+        
+        
 
-        </div>
-    </div>        
          
     <script type="text/javascript" src="index.js"></script>
              
